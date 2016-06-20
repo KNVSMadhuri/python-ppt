@@ -1,0 +1,36 @@
+1. S = int(input())== 0 or set(map(int,input().split())) print(sum(S)/len(S))
+2. A,B = raw_input(),set(map(int,raw_input().split()))
+C,D = raw_input(),set(map(int,raw_input().split()))
+print(len(B.union(D)))
+3. for i in range(int(raw_input())): #More than 4 lines will result in 0 score. Blank lines won't be counted.  
+    a = int(raw_input()); A = set(raw_input().split())
+    b = int(raw_input()); B = set(raw_input().split())
+    print(A.issubset(B))
+4. 
+5.
+6. dic1={1:10, 2:20}  
+dic2={3:30, 4:40}  
+dic3={5:50,6:60}  
+dic4 = {}  
+for d in (dic1, dic2, dic3): dic4.update(d)  
+print(dic4) 
+7. d=dict()  
+for x in range(1,16):  
+    d[x]=x**2  
+print(d) 
+
+8. my_dict = {'data1':100,'data2':-54,'data3':247}  
+result=1  
+for key in my_dict:      
+    result=result * my_dict[key]  
+  
+print(result) 
+
+9. print countWord('zenOfPython.txt', 'the')
+10. for _ in range(int(input())):   
+    try:
+        a, b = map(int, input().split())
+        print(a//b)      
+    except (ZeroDivisionError, ValueError) as e:
+        print("Error Code:", e)
+
